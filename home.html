@@ -1,0 +1,34 @@
+<html>
+
+
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="w-100 position-fixed shadow-lg p-3 d-flex justify-content-between align-items-center">
+            <h4> SMART LOGIN </h4>
+            <button class="homeButton" ><a href="index.html">Logout</a> </button>
+        </nav>
+        <div class="container ">
+            <div class=" shadow-lg section">
+                <div class="pt-5 " id="showName">
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        <script src="js/main.js"></script>
+        <script>
+        
+            document.getElementById("showName").innerHTML = JSON.parse( localStorage.getItem("currentUser") );
+
+        </script>
+    </body>
+    </html>
